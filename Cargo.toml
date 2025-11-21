@@ -1,0 +1,16 @@
+[package]
+name = "RVlwext4"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bitflags = "2.10"
+lazy_static = { version = "1.5", features = ["spin_no_std"] }
+log = "0.4"
+
+
+[features]
+default = ["debug_printf", "debug_assert"]
+debug_printf = []
+debug_assert = []
+own_assert = []
